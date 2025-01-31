@@ -54,6 +54,9 @@ This project involves modifying the **NNDL book's "network.py"** code (Chapter 1
 
 ### 4️⃣ Custom Test Application & Visualization
 📌 **Objective**: Implement and visualize a new test case.
+- Given graphs here are using eta = 0.315, so eta 0.3 should yields consistent results on the performances of both train and test sets. From the graphs, Accuracy increases over time, at epoch 100, trainset yields 98.10% and test set yields 93.33%. Mean-Squared Error, Cross Entropy and Log Likelihood are decreasing over time and both train and test sets.
+- Around epoch 60th forward, errors on testing data are slightly higher than training data but not significant. The two lines are almost overlap indicates there is no underfitting/overfitting of the data using eta approximately 0.3. The neural network is performing well on unseen data, correctly classifying the three Iris species.
+![Neural Network](https://github.com/pngo1997/Images/blob/main/Neural%20Network.png)  
 
 ## 📊 Results & Findings
 ✅ Successfully extended the evaluation metrics (Accuracy, MSE, CE, LL).
